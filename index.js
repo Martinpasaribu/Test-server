@@ -20,7 +20,7 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"],
  }));
  
-app.use('/uploads', express.static('uploads'))
+// app.use('/uploads', express.static('uploads'))
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
