@@ -12,7 +12,7 @@ const router = express.Router();
 // const storage = multer.memoryStorage();
 // const upload = multer({ storage });
 
-const upload = multer({ dest: 'uploads/' })
+// const upload = multer({ dest: 'uploads/' })
 // import { CloudinaryStorage } from 'multer-storage-cloudinary';
 
 // import  {v2 as cloudinary} from 'cloudinary';
@@ -40,7 +40,7 @@ import {getUser, getUsers , editUser, deleteUser,SaveBill,GetRiwayat }from '../c
 router.get('/get-user/:id', getUser)
 router.get('/get-users', getUsers)
 // router.post('/add-user', upload.single('image'),addUser)
-router.put('/edit-user/:id', upload.single('image'), editUser)
+// router.put('/edit-user/:id', upload.single('image'), editUser)
 router.delete('/delete-user/:id', deleteUser)
 router.post('/save-bill', SaveBill);
 router.get('/riwayat', GetRiwayat);
