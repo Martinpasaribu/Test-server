@@ -34,7 +34,7 @@ app.use(routing);
 app.use(rute);
 
 app.use("/", (req, res) => {
-    res.send("Server is running s");
+    res.send("Server is running ss");
 });
 app.listen(PORT, () => {
     console.log(`APP STARTED PORT : ${PORT}`)
