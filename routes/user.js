@@ -17,7 +17,7 @@ import multer from 'multer';
 
 import { CloudinaryStorage } from 'multer-storage-cloudinary';
 
-import  {v2 as cloudinary} from 'cloudinary';
+import  cloudinary from 'cloudinary';
           
 cloudinary.config({ 
   cloud_name: 'dxkker0mf', 
