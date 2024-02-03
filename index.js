@@ -3,6 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import routing from './routes/user.js'
+import rute from './routes/rute.js'
 // db connecting
 import {Koneksi} from "./config/Koneksi.js"
 
@@ -30,7 +31,7 @@ app.use(bodyParser.json())
 
 
 app.use(routing);
-
+app.use(rute);
 
 app.use("/", (req, res) => {
     res.send("Server is running");
