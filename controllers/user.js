@@ -23,6 +23,35 @@ export const addUser = async (req, res) => {
     }
 }
 
+
+// router.post('/add-user', upload.single('image'), async (req, res) => {
+//     try {
+//       const name = req.body.name;
+//       const harga = req.body.harga;
+  
+//       // Periksa apakah file gambar ada dan unggah ke Cloudinary
+//       let imageUrl = '';
+//       if (req.file) {
+//         const result = await handleUpload(req.file.buffer);
+//         imageUrl = result.secure_url;
+//       }
+  
+//       if (!name || !harga) {
+//         return res.status(400).json({ code: 400, message: 'Bad Request' });
+//       }
+  
+//       // Simpan data produk ke database
+//       const newUser = new Produk({ name, image: imageUrl, harga });
+//       const response = await newUser.save();
+  
+//       if (response) {
+//         return res.status(200).json({ code: 200, message: 'User Added Success' });
+//       }
+//     } catch (err) {
+//       console.error('Error adding user:', err);
+//       return res.status(500).json({ code: 500, message: 'Server Error' });
+//     }
+//   });
 export const getUser = async (req, res) => {
     try {
         const _userId = req.params.id
